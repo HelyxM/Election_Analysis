@@ -50,7 +50,7 @@ with open(file_to_load) as election_data:
         # 3. Calculate the percentage of votes
         vote_percentage = float(votes) / float(total_votes) * 100
         # 4. Print the candidate name and percentage of votes - printed below
-        print(f"{candidate_name}: received {vote_percentage: .1f}% of the vote.")
+        print(f"{candidate_name}: received {vote_percentage:.1f}% of the vote.")
 
         # To do: print out each candidate's name, vote count, and percentage of winning votes
         print(f"{candidate_name}: {vote_percentage:.1f}% ({votes:,})\n")
@@ -72,16 +72,3 @@ with open(file_to_load) as election_data:
         f"Winning Percentage: {winning_percentage:.1f}%\n"
         f"-------------------------\n")
     print(winning_candidate_summary)
-
-# 1. Print the total number of votes cast
-    # print(total_votes)
-# 2. Print a complete list of candidates who received votes
-    # print(candidate_options)
-# 3. The percentage of votes each candidate won
-
-# 4. Total number of votes each candidate won
-    # print(candidate_votes)
-# 5. The winner of the election based on popular vote
-    # print(winning_candidate)
-    # print(winning_percentage)
-    # print(winning_count)
