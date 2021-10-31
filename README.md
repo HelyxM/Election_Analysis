@@ -12,7 +12,8 @@ The purpose of this election audit analysis was to review the data collected fro
 ### Election Analysis Text File of Conclusions
 [election_analysis](analysis/election_analysis.txt)
 
-![Election_Analysis_Text_File](analysis/Election_Analysis_Text_File.png)
+![Election_Analysis_Text_File](analysis/Election Analysis Text File.png)
+
 ## **Election-Audit Results**:
 There are several outcomes that this analysis has concluded about the congressional election in Colorado for the year in question. The major conclusions were:
 - The Total Number of Votes Cast:
