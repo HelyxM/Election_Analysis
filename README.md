@@ -26,7 +26,7 @@ There are several outcomes that this analysis has concluded about the congressio
     - Diana DeGette: 73.8% with 272,892 votes
     - Raymon Anthony Doane: 3.1% with 11,606 votes
 
-- These values were determined through use of a "for" logic loop and two "if" conditional loops nested inside of it to return the: total vote number value, county vote numbers, and candidate vote numbers as shown in the code below.
+- - These values were determined through use of a "for" logic loop and two "if" conditional loops nested inside of it to return the: total vote number value, county vote numbers, and candidate vote numbers as shown in the code below.
 ` ` ` 
           - for row in reader:
               - total_votes = total_votes + 1
