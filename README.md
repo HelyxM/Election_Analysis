@@ -1,5 +1,5 @@
 # An Analysis of Election Data
-### Election Results Data
+### Election Results Data Worksheet
 [election_results](Resources/election_results.csv)
 ### Election Analysis Python File
 [PyPoll_Challenge](PyPoll_Challenge.py)
@@ -18,9 +18,19 @@ The purpose of this election audit analysis was to review the data collected fro
 There are several outcomes that this analysis has concluded about the congressional election in Colorado for the year in question. The major conclusions were:
 - The Total Number of Votes Cast: 369,711 votes
 - Number of Votes and Percentage of Votes Per County Involved: 
-- The County With the Largest Number of Votes:
+'''
+- Jefferson: 10.5% with 38,855 votes
+- Denver: 82.8% with 306,055 votes
+- Arapahoe: 6.7% with 24,801 votes
+'''
+- The County With the Largest Number of Votes: Denver
 - The Candidates Involved and Their Respective Received Vote Totals and Percentages of the Total:
-- Winning Candidate in the Election:
+'''
+- Charles Casper Stockham: 23.0% with 85,213 votes
+- Diana DeGette: 73.8% with 272,892 votes
+- Raymon Anthony Doane: 3.1% with 11,606 votes
+'''
+- Winning Candidate in the Election: Diana DeGette at 73.8% of vote with 272,892 votes
 
 
 ## **Election-Audit Summary**:
