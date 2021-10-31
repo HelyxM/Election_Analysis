@@ -16,31 +16,31 @@ The purpose of this election audit analysis was to review the data collected fro
 ![Election_Analysis_Text_File](https://github.com/HelyxM/Election_Analysis/blob/7156fbd9997afcc3c4151b7a119c1d13f52eec5d/analysis/Election%20Analysis%20Text%20File.png)
 
 There are several outcomes that this analysis has concluded about the congressional election in Colorado for the year in question. The major conclusions were:
-- The Total Number of Votes Cast: 369,711 votes
-- Number of Votes and Percentage of Votes Per County Involved: 
+1. The Total Number of Votes Cast: 369,711 votes
+2. Number of Votes and Percentage of Votes Per County Involved: 
     - Jefferson: 10.5% with 38,855 votes
     - Denver: 82.8% with 306,055 votes
     - Arapahoe: 6.7% with 24,801 votes
-- The Candidates Involved and Their Respective Received Vote Totals and Percentages of the Total:
+3. The Candidates Involved and Their Respective Received Vote Totals and Percentages of the Total:
     - Charles Casper Stockham: 23.0% with 85,213 votes
     - Diana DeGette: 73.8% with 272,892 votes
     - Raymon Anthony Doane: 3.1% with 11,606 votes
 
-These values were determined through use of a "for" logic loop and two "if" conditional loops nested inside of it to return the: total vote number value, county vote numbers, and candidate vote numbers as shown in the code below.
+- These values were determined through use of a "for" logic loop and two "if" conditional loops nested inside of it to return the: total vote number value, county vote numbers, and candidate vote numbers as shown in the code below.
 ` ` ` 
-           - for row in reader:
-                - total_votes = total_votes + 1
-                - candidate_name = row[2]        
-                - county_name = row[1]
-               - if candidate_name not in candidate_options:
-                    - candidate_options.append(candidate_name)
-                    - candidate_votes[candidate_name] = 0
-               - candidate_votes[candidate_name] += 1
+          - for row in reader:
+              - total_votes = total_votes + 1
+              - candidate_name = row[2]        
+              - county_name = row[1]
+             - if candidate_name not in candidate_options:
+                 - candidate_options.append(candidate_name)
+                 - candidate_votes[candidate_name] = 0
+             - candidate_votes[candidate_name] += 1
 
-                - if county_name not in counties:            
-                    - counties.append(county_name)
-                    - county_votes[county_name] = 0
-                - county_votes[county_name] += 1
+             - if county_name not in counties:            
+                - counties.append(county_name)
+                - county_votes[county_name] = 0
+             - county_votes[county_name] += 1
 ` ` ` 
 To determine the percentage of votes that each county contributed and each candidate received, code blocks were constructed with "for" logic loops that presented the votes per county as float objects and votes per candidate as float objects and divided them individually by the total number of votes. By multiplying them by 100 a percentage value was received as shown in the code below.
 ` ` ` 
