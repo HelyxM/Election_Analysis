@@ -47,12 +47,12 @@ There are several outcomes that this analysis has concluded about the congressio
 --- To determine the percentage of votes that each county contributed and each candidate received, code blocks were constructed with "for" logic loops that presented the votes per county as float objects and votes per candidate as float objects and divided them individually by the total number of votes. By multiplying them by 100 a percentage value was received as shown in the code below.
 
 ``` 
-       - for county_name in county_votes:
-         - vote_number = county_votes[county_name]
-         - county_vote_percentage = float(vote_number) / float (total_votes) * 100
-       - for candidate_name in candidate_votes:
-         - votes = candidate_votes.get(candidate_name)
-         - vote_percentage = float(votes) / float(total_votes) * 100
+        for county_name in county_votes:
+          vote_number = county_votes[county_name]
+          county_vote_percentage = float(vote_number) / float (total_votes) * 100
+        for candidate_name in candidate_votes:
+          votes = candidate_votes.get(candidate_name)
+          vote_percentage = float(votes) / float(total_votes) * 100
 ```
 
 4. The County With the Largest Number of Votes: Denver
@@ -60,28 +60,28 @@ There are several outcomes that this analysis has concluded about the congressio
 --- These values were determined through "if" conditional loops inside of the for loops that determined their percentage values, which are presented above. Comparative logic statements were used that iterated through the vote numbers and vote percentages to determine the largest number in each of the two value types. Te winning candidate and largest county were then given as variables that were printed to the terminal and to a text file, as shown in the code below.
 
 ```
-    - if (vote_number > county_turnout):
-      - county_turnout = vote_number
-      - largest_county = county_name
-    - county_summary = (
-      - f"\n-------------------------\n"
-      - f"Largest County Turnout: {largest_county}\n"
-      - f"-------------------------\n")
-    - print(county_summary)
-- txt_file.write(county_summary)
+     if (vote_number > county_turnout):
+       county_turnout = vote_number
+       largest_county = county_name
+     county_summary = (
+       f"\n-------------------------\n"
+       f"Largest County Turnout: {largest_county}\n"
+       f"-------------------------\n")
+     print(county_summary)
+ txt_file.write(county_summary)
 
-    - if (votes > winning_count) and (vote_percentage > winning_percentage):
-       - winning_count = votes
-       - winning_candidate = candidate_name
-       - winning_percentage = vote_percentage
-- winning_candidate_summary = (
-   - f"-------------------------\n"
-   - f"Winner: {winning_candidate}\n"
-   - f"Winning Vote Count: {winning_count:,}\n"
-   - f"Winning Percentage: {winning_percentage:.1f}%\n"
-   - f"-------------------------\n")
-- print(winning_candidate_summary)
-- txt_file.write(winning_candidate_summary)
+     if (votes > winning_count) and (vote_percentage > winning_percentage):
+        winning_count = votes
+        winning_candidate = candidate_name
+        winning_percentage = vote_percentage
+ winning_candidate_summary = (
+    f"-------------------------\n"
+    f"Winner: {winning_candidate}\n"
+    f"Winning Vote Count: {winning_count:,}\n"
+    f"Winning Percentage: {winning_percentage:.1f}%\n"
+    f"-------------------------\n")
+ print(winning_candidate_summary)
+ txt_file.write(winning_candidate_summary)
 ```
 
 ## **Election-Audit Summary**:
