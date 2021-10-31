@@ -88,12 +88,6 @@ This code file can be adapted for use in many different types of elections while
 
 ```
 - file_to_load = os.path.join(dirname, "Resources", "election_results.csv")
-``` 
-
 and the new path would have to be adapted from a template of:
-
-```
-
 - file_to_load = os.path.join(dirname, "subfolder_inside_holding_folder_of_python_file", "CSV_file_to_be_analyzed.csv")
-
 ```
