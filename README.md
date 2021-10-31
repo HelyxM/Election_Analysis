@@ -84,6 +84,7 @@ There are several outcomes that this analysis has concluded about the congressio
 - txt_file.write(winning_candidate_summary)
     
 ## **Election-Audit Summary**:
+
 This code file can be adapted for use in many different types of elections while using a majority of the same structure and values defined already. So long as the election results are still recorded in a CSV file and the concluded categories presented in this analysis are still desired, only one change would need to be made to the code to run a different election analysis. The primary change that would need to be made for a different election analysis is the path to the CSV file for the data to be analyzed. For this path change, the given file path would need to be adjusted for where the new data is located with the current path being:
 
 ```
