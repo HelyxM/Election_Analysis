@@ -28,19 +28,19 @@ There are several outcomes that this analysis has concluded about the congressio
 
 These values were determined through use of a "for" logic loop and two "if" conditional loops nested inside of it to return the: total vote number value, county vote numbers, and candidate vote numbers as shown in the code below.
 ` ` ` 
-   - for row in reader:
-        - total_votes = total_votes + 1
-        - candidate_name = row[2]        
-        - county_name = row[1]
-       - if candidate_name not in candidate_options:
-            - candidate_options.append(candidate_name)
-            - candidate_votes[candidate_name] = 0
-       - candidate_votes[candidate_name] += 1
-       
-        - if county_name not in counties:            
-            - counties.append(county_name)
-            - county_votes[county_name] = 0
-        - county_votes[county_name] += 1
+       - for row in reader:
+            - total_votes = total_votes + 1
+            - candidate_name = row[2]        
+            - county_name = row[1]
+           - if candidate_name not in candidate_options:
+                - candidate_options.append(candidate_name)
+                - candidate_votes[candidate_name] = 0
+           - candidate_votes[candidate_name] += 1
+
+            - if county_name not in counties:            
+                - counties.append(county_name)
+                - county_votes[county_name] = 0
+            - county_votes[county_name] += 1
 ` ` ` 
 To determine the percentage of votes that each county contributed and each candidate received, code blocks were constructed with "for" logic loops that presented the votes per county as float objects and votes per candidate as float objects and divided them individually by the total number of votes. By multiplying them by 100 a percentage value was received as shown in the code below.
 ` ` ` 
