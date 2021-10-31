@@ -27,7 +27,6 @@ There are several outcomes that this analysis has concluded about the congressio
     - Raymon Anthony Doane: 3.1% with 11,606 votes
 These values were determined through use of a "for" logic loop and two "if" conditional loops nested inside of it to return the: total vote number value, county vote numbers, and candidate vote numbers as shown in the code below.
 ` ` ` 
-    # For each row in the CSV file.
     for row in reader:
         # Add to the total vote count
         total_votes = total_votes + 1
