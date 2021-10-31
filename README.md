@@ -94,3 +94,31 @@ and the new path would have to be adapted from a template of:
 
 - file_to_load = os.path.join(dirname, "subfolder_inside_holding_folder_of_python_file", "CSV_file_to_be_analyzed.csv")
 ```
+
+Alternatively, to adapt the code for use in a federal election for president, the same code file could be used with the county information replaced for state information to determine the popular vote and conclude the winner of the election based only on the popular vote across the states. Though this would not be the final answer for the presidential election, it would conclude the nation-wide popular vote to compare with the electoral college's votes and present the difference in each state's selected winner if adapted for such conclusions.  
+
+```
+  for row in reader:
+      total_votes = total_votes + 1
+      candidate_name = row[2]        
+      state_name = row[1]
+      
+      if candidate_name not in candidate_options and state_name not in states
+        candidate_options.append(candidate_name)
+        candidate_votes[candidate_name] = 0
+        states.append(state_name)
+        state_votes[state_name] = 0
+        
+        
+      if candidate_name not in candidate_options:
+          candidate_options.append(candidate_name)
+          candidate_votes[candidate_name] = 0
+      candidate_votes[candidate_name] += 1
+
+      if state_name not in states:            
+         states.append(state_name)
+         state_votes[state_name] = 0
+      state_votes[state_name] += 1
+      
+      
+```
