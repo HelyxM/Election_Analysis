@@ -16,8 +16,8 @@ The purpose of this election audit analysis was to review the data collected fro
 ![Election_Analysis_Text_File](https://github.com/HelyxM/Election_Analysis/blob/7156fbd9997afcc3c4151b7a119c1d13f52eec5d/analysis/Election%20Analysis%20Text%20File.png)
 
 There are several outcomes that this analysis has concluded about the congressional election in Colorado for the year in question. The major conclusions were:
-- The Total Number of Votes Cast:
-- Number of Votes and Percentage of Votes Per County Involved:
+- The Total Number of Votes Cast: 369,711 votes
+- Number of Votes and Percentage of Votes Per County Involved: 
 - The County With the Largest Number of Votes:
 - The Candidates Involved and Their Respective Received Vote Totals and Percentages of the Total:
 - Winning Candidate in the Election:
