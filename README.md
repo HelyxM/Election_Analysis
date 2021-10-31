@@ -28,40 +28,25 @@ There are several outcomes that this analysis has concluded about the congressio
 These values were determined through use of a "for" logic loop and two "if" conditional loops nested inside of it to return the: total vote number value, county vote numbers, and candidate vote numbers as shown in the code below.
 ` ` ` 
     for row in reader:
-        # Add to the total vote count
         total_votes = total_votes + 1
-        # Get the candidate name from each row.
         candidate_name = row[2]        
-        # 3: Extract the county name from each row.
         county_name = row[1]
-        # If the candidate does not match any existing candidate add it to
-        # the candidate list
-        if candidate_name not in candidate_options:
-            # Add the candidate name to the candidate list.
+       if candidate_name not in candidate_options:
             candidate_options.append(candidate_name)
-            # And begin tracking that candidate's voter count.
             candidate_votes[candidate_name] = 0
-        # Add a vote to that candidate's count
-        candidate_votes[candidate_name] += 1
-        # 4a: Write an if statement that checks that the
-        # county does not match any existing county in the county list.
+       candidate_votes[candidate_name] += 1
+       
         if county_name not in counties:            
-            # 4b: Add the existing county to the list of counties.
             counties.append(county_name)
-            # 4c: Begin tracking the county's vote count.
             county_votes[county_name] = 0
-        # 5: Add a vote to that county's vote count.
         county_votes[county_name] += 1
 ` ` ` 
 To determine the percentage of votes that each county contributed and each candidate received, code blocks were constructed with "for" logic loops that presented the votes per county as float objects and votes per candidate as float objects and divided them individually by the total number of votes. By multiplying them by 100 a percentage value was received as shown in the code below.
 ` ` ` 
 for county_name in county_votes:
-        # 6b: Retrieve the county vote count.
         vote_number = county_votes[county_name]
-        # 6c: Calculate the percentage of votes for the county.
         county_vote_percentage = float(vote_number) / float (total_votes) * 100
 for candidate_name in candidate_votes:
-        # Retrieve vote count and percentage
         votes = candidate_votes.get(candidate_name)
         vote_percentage = float(votes) / float(total_votes) * 100
 ` ` ` 
