@@ -28,6 +28,7 @@ There are several outcomes that this analysis has concluded about the congressio
 
         -These values were determined through use of a "for" logic loop and two "if" conditional loops nested inside of it to return the: total vote number value, county vote numbers, and candidate vote numbers as shown in the code below.
 
+
 ``` 
          for row in reader:
              total_votes = total_votes + 1
