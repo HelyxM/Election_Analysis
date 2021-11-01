@@ -95,5 +95,6 @@ and the new path would have to be adapted from a template of:
 - file_to_load = os.path.join(dirname, "subfolder_inside_holding_folder_of_python_file", "CSV_file_to_be_analyzed.csv")
 ```
 
-Alternatively, to adapt the code for use in 
+In addition to the data source changes, to adapt the code for use in different elections, such as a state-wide gubernatorial election, the focus on candidates and counties submitting ballots can be changed to simply focus on the candidates by removing the sections relating to counties. Alternatively to analyze the support for the different political parties, the county-related criteria can be changed to retrieve data from a column listing the candidates' party affiliations. With the existing code blocks, the returned analysis would also provide the number and percentage of votes each party received. The only needed changes for this adaptation would be to: open the python file and edit it with a program such as Visual Studio Code, select one instance of the words related to county or counties, right click the word, select "change all occurrences" and type in "party" or "parties" in the relevant cases to provide a usable analysis in the text file output.
+
   
