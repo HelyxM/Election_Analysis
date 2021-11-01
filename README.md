@@ -45,7 +45,7 @@ There are several outcomes that this analysis has concluded about the congressio
             county_votes[county_name] += 1
 ``` 
 
-        - To determine the percentage of votes that each county contributed and each candidate received, code blocks were constructed with "for" logic loops that presented the votes per county as float objects and votes per candidate as float objects and divided them individually by the total number of votes. By multiplying them by 100 a percentage value was received as shown in the code below.
+        -To determine the percentage of votes that each county contributed and each candidate received, code blocks were constructed with "for" logic loops that presented the votes per county as float objects and votes per candidate as float objects and divided them individually by the total number of votes. By multiplying them by 100 a percentage value was received as shown in the code below.
 
 ``` 
         for county_name in county_votes:
@@ -58,7 +58,7 @@ There are several outcomes that this analysis has concluded about the congressio
 
 4. The County With the Largest Number of Votes: Denver
 5. Winning Candidate in the Election: Diana DeGette at 73.8% of vote with 272,892 votes
---- These values were determined through "if" conditional loops inside of the for loops that determined their percentage values, which are presented above. Comparative logic statements were used that iterated through the vote numbers and vote percentages to determine the largest number in each of the two value types. Te winning candidate and largest county were then given as variables that were printed to the terminal and to a text file, as shown in the code below.
+        - These values were determined through "if" conditional loops inside of the for loops that determined their percentage values, which are presented above. Comparative logic statements were used that iterated through the vote numbers and vote percentages to determine the largest number in each of the two value types. Te winning candidate and largest county were then given as variables that were printed to the terminal and to a text file, as shown in the code below.
 
 ```
      if (vote_number > county_turnout):
