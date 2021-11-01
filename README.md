@@ -85,7 +85,7 @@ There are several outcomes that this analysis has concluded about the congressio
 ```
 
 ## **Election-Audit Summary**:
-This code file can be adapted for use in many different types of elections while using a majority of the same structure and values defined already. So long as the election results are still recorded in a CSV file and the concluded categories presented in this analysis are still desired, only one change would need to be made to the code to run a different election analysis. The primary change that would need to be made for a different election analysis is the path to the CSV file for the data to be analyzed. For this path change, the given file path would need to be adjusted for where the new data is located with the current path being:
+This code file can be adapted for use in many different types of elections handled by the election commission while using a majority of the same structure and values defined already. So long as the election results are still recorded in a CSV file and the concluded categories presented in this analysis are still desired, only one change would need to be made to the code to run a different election analysis. The primary change that would need to be made for a different election analysis is the path to the CSV file for the data to be analyzed. For this path change, the given file path would need to be adjusted for where the new data is located with the current path being:
 
 ```
 - file_to_load = os.path.join(dirname, "Resources", "election_results.csv")
@@ -95,30 +95,5 @@ and the new path would have to be adapted from a template of:
 - file_to_load = os.path.join(dirname, "subfolder_inside_holding_folder_of_python_file", "CSV_file_to_be_analyzed.csv")
 ```
 
-Alternatively, to adapt the code for use in a federal election for president, the same code file could be used with the county information replaced for state information to determine the popular vote and conclude the winner of the election based only on the popular vote across the states. Though this would not be the final answer for the presidential election, it would conclude the nation-wide popular vote to compare with the electoral college's votes and present the difference in each state's selected winner if adapted for such conclusions.  
-
-```
-  for row in reader:
-      total_votes = total_votes + 1
-      candidate_name = row[2]        
-      state_name = row[1]
-      
-      if candidate_name not in candidate_options and state_name not in states
-        candidate_options.append(candidate_name)
-        candidate_votes[candidate_name] = 0
-        states.append(state_name)
-        state_votes[state_name] = 0
-        
-        
-      if candidate_name not in candidate_options:
-          candidate_options.append(candidate_name)
-          candidate_votes[candidate_name] = 0
-      candidate_votes[candidate_name] += 1
-
-      if state_name not in states:            
-         states.append(state_name)
-         state_votes[state_name] = 0
-      state_votes[state_name] += 1
-      
-      
-```
+Alternatively, to adapt the code for use in 
+  
